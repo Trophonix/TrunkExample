@@ -1,6 +1,7 @@
 package com.trophonix.trunkexample;
 
 import com.trophonix.trunk.api.chat.TrunkChat;
+import com.trophonix.trunk.api.exceptions.APIRegisterException;
 
 import java.util.UUID;
 
@@ -11,7 +12,7 @@ public class ExampleChat extends TrunkChat {
 
     private TrunkExample main;
 
-    public ExampleChat(TrunkExample main) {
+    public ExampleChat(TrunkExample main) throws APIRegisterException {
         super(main);
         this.main = main;
     }

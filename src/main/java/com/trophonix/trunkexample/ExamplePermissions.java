@@ -20,11 +20,6 @@ public class ExamplePermissions extends TrunkPermissions {
     }
 
     @Override
-    public boolean has(Player player, String node) {
-        return player.hasPermission(node);
-    }
-
-    @Override
     public boolean has(CommandSender player, String node) {
         return player.hasPermission(node);
     }
